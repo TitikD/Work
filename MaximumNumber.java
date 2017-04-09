@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class MaximumNumber {
 	
-	//Нахождение большего числа из 3 возможных.
+	//РќР°С…РѕР¶РґРµРЅРёРµ Р±РѕР»СЊС€РµРіРѕ С‡РёСЃР»Р° РёР· 3 РІРѕР·РјРѕР¶РЅС‹С….
 	public static void main(String[] args) {
 		Scanner scan = new Scanner (System.in);
 		int a = scan.nextInt();
@@ -11,7 +11,7 @@ public class MaximumNumber {
 		int[]x = {a, b, c};
 		int maxNumber = (int)Double.NEGATIVE_INFINITY;
 		
-		//Перебор элементов массива и присваивание меньшему maxNumber.
+		//РџРµСЂРµР±РѕСЂ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° Рё РїСЂРёСЃРІР°РёРІР°РЅРёРµ РјРµРЅСЊС€РµРјСѓ maxNumber.
 		for(int i = 0;i<x.length;i++){
 			if(maxNumber<x[i]){						
 				maxNumber=x[i];
