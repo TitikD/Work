@@ -1,27 +1,27 @@
 import java.util.Scanner;
 public class TicketTrip {
 	
-	//Поиск выгодного варианта для покупки билетов по 60, 10, 1 штук в наборе, по цене 440, 125, 15 соответственно.
+	//РџРѕРёСЃРє РІС‹РіРѕРґРЅРѕРіРѕ РІР°СЂРёР°РЅС‚Р° РґР»СЏ РїРѕРєСѓРїРєРё Р±РёР»РµС‚РѕРІ РїРѕ 60, 10, 1 С€С‚СѓРє РІ РЅР°Р±РѕСЂРµ, РїРѕ С†РµРЅРµ 440, 125, 15 СЃРѕРѕС‚РІРµС‚СЃС‚РІРµРЅРЅРѕ.
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int n = scan.nextInt();
 		scan.close();	
-		int	balance60Kit = n%60; 				
+		int balance60Kit = n%60; 				
 		n -= balance60Kit;  			
-		int	answer60Kit = n/60;			
-		if(balance60Kit>=35){					//Выгоднее будет купить 35 билетов по цене 60
+		int answer60Kit = n/60;			
+		if(balance60Kit >= 35){				//Р’С‹РіРѕРґРЅРµРµ Р±СѓРґРµС‚ РєСѓРїРёС‚СЊ 35 Р±РёР»РµС‚РѕРІ РїРѕ С†РµРЅРµ 60
 			answer60Kit++;			
-			balance60Kit=0;			
+			balance60Kit = 0;			
 		}
 		int balance10Kit = balance60Kit%10;
 		n = balance60Kit-balance10Kit;
 		int answer10Kit = n/10;
-		if(balance10Kit>=9){					//Выгодней будет купить 9 билетов по цене 10
+		if(balance10Kit >= 9){				//Р’С‹РіРѕРґРЅРµР№ Р±СѓРґРµС‚ РєСѓРїРёС‚СЊ 9 Р±РёР»РµС‚РѕРІ РїРѕ С†РµРЅРµ 10
 			answer10Kit++;
 			balance10Kit = 0;
 		}
-		System.out.print(balance10Kit+" ");		//Остаток от набора по 10 билетов является ответом для кол-во набора по 1
-		System.out.print(answer10Kit+" ");
+		System.out.print(balance10Kit + " ");		//РћСЃС‚Р°С‚РѕРє РѕС‚ РЅР°Р±РѕСЂР° РїРѕ 10 Р±РёР»РµС‚РѕРІ СЏРІР»СЏРµС‚СЃСЏ РѕС‚РІРµС‚РѕРј РґР»СЏ РєРѕР»-РІРѕ РЅР°Р±РѕСЂР° РїРѕ 1
+		System.out.print(answer10Kit + " ");
 		System.out.print(answer60Kit);	
 	}
 }
