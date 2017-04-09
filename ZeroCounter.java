@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class ZeroCounter {
 	
-	//Нахождение нолей среди всех цифр в натуральном числа с помощью деления на 10 и нахождения остатка
+	//РќР°С…РѕР¶РґРµРЅРёРµ РЅРѕР»РµР№ СЃСЂРµРґРё РІСЃРµС… С†РёС„СЂ РІ РЅР°С‚СѓСЂР°Р»СЊРЅРѕРј С‡РёСЃР»Р° СЃ РїРѕРјРѕС‰СЊСЋ РґРµР»РµРЅРёСЏ РЅР° 10 Рё РїРѕРёСЃРєР° 0 РІ РѕСЃС‚Р°С‚РєРµ
 	public int numberOfZeroes(int n){ 
 		int zeroCounter = 0 ;
 		while(true){
@@ -18,7 +18,7 @@ public class ZeroCounter {
 	}
 	
 	
-	//Ввод данных и вызов функции numberOfZeroes.
+	//Р’РІРѕРґ РґР°РЅРЅС‹С… Рё РІС‹Р·РѕРІ С„СѓРЅРєС†РёРё numberOfZeroes.
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int n = scan.nextInt();
